@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Info</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🏢 HMS</h2>
+    <a href="student_dashboard.html">Dashboard</a>
+    <a href="room_info.html" class="active">My Room</a>
+    <a href="submit_complaint.html">Submit Complaint</a>
+    <a href="my_tickets.html">My Tickets</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="topbar">
+    <h3>My Room</h3>
+    <span>👤 Krishna Sai</span>
+  </div>
+
+  <div class="content">
+    <div class="page-title">My Room</div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+      <div class="card">
+        <h4>Room Details</h4>
+        <table>
+          <tr>
+            <td style="color: gray;">Room Number</td>
+            <td><strong>204</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Block</td>
+            <td><strong>Block B</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Floor</td>
+            <td><strong>2nd Floor</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Capacity</td>
+            <td><strong>2 Students</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Roommate</td>
+            <td><strong>Rahul Kumar</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Allocated On</td>
+            <td><strong>15 Jan 2026</strong></td>
+          </tr>
+          <tr>
+            <td style="color: gray;">Status</td>
+            <td><span class="badge badge-resolved">Active</span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4>Room Change Request</h4>
+        <p style="font-size: 14px; color: gray; margin-bottom: 16px;">
+          Want to change your room? Fill out the details below and submit a request to admin.
+        </p>
+
+        <label>Preferred Block</label>
+        <select>
+          <option>Block A</option>
+          <option>Block B</option>
+          <option>Block C</option>
+        </select>
+
+        <label>Preferred Floor</label>
+        <select>
+          <option>Ground Floor</option>
+          <option>1st Floor</option>
+          <option>2nd Floor</option>
+          <option>3rd Floor</option>
+        </select>
+
+        <label>Reason for Change</label>
+        <textarea rows="3" placeholder="Explain why you need a room change..."></textarea>
+
+        <button class="btn btn-primary">Submit Request</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

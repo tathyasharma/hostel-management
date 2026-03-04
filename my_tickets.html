@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tickets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🏢 HMS</h2>
+    <a href="student_dashboard.html">Dashboard</a>
+    <a href="room_info.html">My Room</a>
+    <a href="submit_complaint.html">Submit Complaint</a>
+    <a href="my_tickets.html" class="active">My Tickets</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="topbar">
+    <h3>My Tickets</h3>
+    <span>👤 Krishna Sai</span>
+  </div>
+
+  <div class="content">
+    <div class="page-title">My Tickets</div>
+
+    <div class="card">
+      <h4>All Tickets</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TKT-001</td>
+            <td>Fan not working</td>
+            <td>Electrical</td>
+            <td>High</td>
+            <td><span class="badge badge-progress">In Progress</span></td>
+            <td>28 Feb 2026</td>
+          </tr>
+          <tr>
+            <td>TKT-002</td>
+            <td>Broken chair</td>
+            <td>Furniture</td>
+            <td>Medium</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>25 Feb 2026</td>
+          </tr>
+          <tr>
+            <td>TKT-003</td>
+            <td>Dirty corridor</td>
+            <td>Cleanliness</td>
+            <td>Low</td>
+            <td><span class="badge badge-resolved">Resolved</span></td>
+            <td>20 Feb 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4>TKT-001 — Fan not working</h4>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px;">
+        <div>
+          <p style="font-size: 12px; color: gray;">Status</p>
+          <span class="badge badge-progress">In Progress</span>
+        </div>
+        <div>
+          <p style="font-size: 12px; color: gray;">Category</p>
+          <strong>Electrical</strong>
+        </div>
+        <div>
+          <p style="font-size: 12px; color: gray;">Priority</p>
+          <strong>High</strong>
+        </div>
+      </div>
+
+      <p style="font-size: 14px; font-weight: bold; margin-bottom: 10px;">Comments</p>
+
+      <div style="background: #e8f0fe; padding: 12px; border-radius: 8px; margin-bottom: 10px;">
+        <p style="font-size: 12px; color: gray;">Warden — 28 Feb 10:30 AM</p>
+        <p style="font-size: 14px; margin-top: 4px;">We have noted the issue and assigned it to maintenance.</p>
+      </div>
+
+      <div style="background: #f4f6fb; padding: 12px; border-radius: 8px; margin-bottom: 16px;">
+        <p style="font-size: 12px; color: gray;">You — 28 Feb 11:00 AM</p>
+        <p style="font-size: 14px; margin-top: 4px;">Please fix it soon, it is very hot.</p>
+      </div>
+
+      <textarea rows="2" placeholder="Add a comment..."></textarea>
+      <button class="btn btn-primary" style="margin-top: 4px;">Send</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

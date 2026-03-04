@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Tickets</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>🏢 HMS</h2>
+    <a href="admin_dashboard.html">Dashboard</a>
+    <a href="manage_rooms.html">Manage Rooms</a>
+    <a href="manage_tickets.html" class="active">All Tickets</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="topbar">
+    <h3>All Tickets</h3>
+    <span>👤 Admin</span>
+  </div>
+
+  <div class="content">
+    <div class="page-title">All Tickets</div>
+
+    <div class="card">
+      <h4>Ticket List</h4>
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <button class="btn btn-primary" style="padding: 6px 14px; font-size: 13px;">All</button>
+        <button class="btn btn-outline" style="padding: 6px 14px; font-size: 13px;">Pending</button>
+        <button class="btn btn-outline" style="padding: 6px 14px; font-size: 13px;">In Progress</button>
+        <button class="btn btn-outline" style="padding: 6px 14px; font-size: 13px;">Resolved</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>Student</th>
+            <th>Room</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TKT-001</td>
+            <td>Krishna Sai</td>
+            <td>B-204</td>
+            <td>Fan not working</td>
+            <td>Electrical</td>
+            <td>High</td>
+            <td><span class="badge badge-progress">In Progress</span></td>
+            <td>28 Feb</td>
+            <td><button class="btn btn-outline" style="padding: 4px 10px; font-size: 12px;">Update</button></td>
+          </tr>
+          <tr>
+            <td>TKT-002</td>
+            <td>Madhav NJ</td>
+            <td>A-101</td>
+            <td>Broken chair</td>
+            <td>Furniture</td>
+            <td>Medium</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>25 Feb</td>
+            <td><button class="btn btn-outline" style="padding: 4px 10px; font-size: 12px;">Update</button></td>
+          </tr>
+          <tr>
+            <td>TKT-003</td>
+            <td>Tathya Sharma</td>
+            <td>C-305</td>
+            <td>Dirty corridor</td>
+            <td>Cleanliness</td>
+            <td>Low</td>
+            <td><span class="badge badge-resolved">Resolved</span></td>
+            <td>20 Feb</td>
+            <td><button class="btn btn-outline" style="padding: 4px 10px; font-size: 12px;">Update</button></td>
+          </tr>
+          <tr>
+            <td>TKT-004</td>
+            <td>Priya S</td>
+            <td>B-110</td>
+            <td>Light fuse blown</td>
+            <td>Electrical</td>
+            <td>High</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>01 Mar</td>
+            <td><button class="btn btn-outline" style="padding: 4px 10px; font-size: 12px;">Update</button></td>
+          </tr>
+          <tr>
+            <td>TKT-005</td>
+            <td>Rahul K</td>
+            <td>B-306</td>
+            <td>Dirty washroom</td>
+            <td>Cleanliness</td>
+            <td>Medium</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+            <td>01 Mar</td>
+            <td><button class="btn btn-outline" style="padding: 4px 10px; font-size: 12px;">Update</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h4>Update Ticket Status</h4>
+      <p style="font-size: 14px; color: gray; margin-bottom: 16px;">Select a ticket above and update its status below.</p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div>
+          <label>Ticket ID</label>
+          <input type="text" placeholder="e.g. TKT-001">
+        </div>
+        <div>
+          <label>New Status</label>
+          <select>
+            <option>Pending</option>
+            <option>In Progress</option>
+            <option>Resolved</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Comment</label>
+      <textarea rows="3" placeholder="Add a comment for the student..."></textarea>
+
+      <button class="btn btn-primary">Update Ticket</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
+```
+
+That's everything done! 🎉 Your full folder should now have:
+```
+C:\hostel_management\
+├── login.html
+├── student_dashboard.html
+├── submit_complaint.html
+├── my_tickets.html
+├── room_info.html
+├── admin_dashboard.html
+├── manage_rooms.html
+├── warden_dashboard.html
+├── manage_tickets.html
+└── css\
+    └── style.css
